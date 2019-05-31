@@ -8,7 +8,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LIFF application</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=7">
 
   <!-- vconsole for debugging the application -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vConsole/3.3.0/vconsole.min.js"></script>
@@ -29,5 +29,5 @@
   </form>
 
   <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
-  <script src="liff-starter.js"></script>
+  <script src="liff-starter.js?v=7"></script>
 </body>
