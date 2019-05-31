@@ -46,7 +46,7 @@ function initializeApp(userId, displayName) {
       window.alert('Could\'t process your registration. Please try again later');
     });
 
-    request.open('GET', 'http://tom-line-msg.herokuapp.com/api/push?' + data, true);
+    request.open('GET', 'https://tom-line-msg.herokuapp.com/api/push?' + data, true);
     request.send();
   });
 }
