@@ -6,7 +6,7 @@ function enableButton(text) {
 
 function disableButton(text) {
   var button = document.getElementById('submitButton');
-  button.addAttribute('disabled');
+  button.addAttribute('disabled', true);
   button.innerHTML = text || 'Loading...';
 }
 
