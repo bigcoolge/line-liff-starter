@@ -36,3 +36,7 @@ input {
   color: white;
   font-size: 1rem;
 }
+
+.submit-button:disabled {
+  background: #d2d2d2;
+}
