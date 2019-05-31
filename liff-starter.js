@@ -1,20 +1,19 @@
 window.onload = function (e) {
   liff.init(function () {
-    console.log('init')
+    console.log('liff initialized.')
     liff.getProfile()
+      console.log('Got profile.')
       .then(function (profile) {
         initializeApp(profile.userId, profile.displayName);
       })
       .catch(function (err) {
         window.alert('Something wrong. Please try again later');
-        console.error(err);
       });
   });
 };
-initializeApp('id', 'john');
 
 function initializeApp(userId, displayName) {
-  console.log('app')
+  console.log('Initializing app.')
   // closeWindow call
   document.getElementById('close').addEventListener('click', function () {
     liff.closeWindow();
