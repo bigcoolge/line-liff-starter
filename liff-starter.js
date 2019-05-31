@@ -20,7 +20,7 @@ window.onload = function () {
     e.preventDefault();
     var phoneNumber = e.target.elements['phone'].value;
 
-    if (!/^\d{8}$/.test(phoneNumber)) {
+    if (!/^\d{8,}$/.test(phoneNumber)) {
       return window.alert('Please type a valid phone number (only numbers, at least 8 digits)');
     }
     if (!userId || !displayName) {
