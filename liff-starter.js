@@ -46,7 +46,7 @@ window.onload = function () {
           displayName = profile.displayName;
           var button = document.getElementById('submitButton')
           button.removeAttribute('disabled');
-          button.innerHTML('Register');
+          button.innerHTML = 'Register';
         })
         .catch(function (err) {
           window.alert('Profile fetching error. Please try again later.');

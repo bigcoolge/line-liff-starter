@@ -24,10 +24,10 @@
     </div>
   </form>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vConsole/3.3.0/vconsole.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vConsole/3.3.0/vconsole.min.js"></script>
   <script>
     var vConsole = new VConsole();
-  </script>
+  </script> -->
 
   <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
   <script src="liff-starter.js?v=<?= $version ?>"></script>
