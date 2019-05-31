@@ -1,16 +1,22 @@
-<!-- This file allows you to host this page as a static file on Heroku -->
 <?php
-  header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-  header("Cache-Control: post-check=0, pre-check=0", false);
-  header("Pragma: no-cache");
+  // Disabled cache
+  // header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+  // header("Cache-Control: post-check=0, pre-check=0", false);
+  // header("Pragma: no-cache");
 
-  $version = 3;
+  $version = 4;
 ?>
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LIFF application</title>
   <link rel="stylesheet" href="style.css?v=<?= $version ?>">
+
+  <!-- vconsole for debugging the application -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vConsole/3.3.0/vconsole.min.js"></script>
+  <script>
+    var vConsole = new VConsole();
+  </script> -->
 </head>
 
 <body>
@@ -23,11 +29,6 @@
       </button>
     </div>
   </form>
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vConsole/3.3.0/vconsole.min.js"></script>
-  <script>
-    var vConsole = new VConsole();
-  </script> -->
 
   <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
   <script src="liff-starter.js?v=<?= $version ?>"></script>
