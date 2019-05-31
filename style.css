@@ -1,45 +1,47 @@
 
 html {
-    font-size: 11px;
+  text-align: center
 }
 
-table {
-    width: 100%;
-    table-layout:fixed;
-    word-break: break-all;
+html * {
+  font-size: 1rem;
 }
 
-.div {
-    max-width: 100%;
-    text-align: center;
+#close {
+  border: none;
+  float: right;
+  color: #d0d0d0;
+  font-size: .8rem;
+  background: none;
+  padding: .5rem;
 }
 
-#profilepicturediv {
-    text-align: center;
+form {
+  padding-top: 30px;
 }
 
-img { 
-    max-width: 25%; 
-    height: auto; 
+label {
+  display: block;
+  padding: 1rem;
 }
 
-#profileimagediv {
-    height: 100px;
-    width: 100px;
+input {
+  line-height: 1rem;
+  padding: .5rem .5rem;
+  width: 50%;
+  max-width: 200px;
+  min-width: 150px;
+  border-radius: 5px;
+  border: solid 1px #d0d0d0;
+  text-align: center;
 }
 
-#contextinfo {
-    display: none;
-}
-
-#accesstokendata, #profileinfo {
-    display: none;
-}
-
-.buttongroup {
-    text-align: center;
-}
-
-button {
-    margin: 4px;
+.submit-button {
+  padding: .5rem 1.5rem;
+  margin-top: 1rem;
+  background: #55d079;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1rem;
 }
