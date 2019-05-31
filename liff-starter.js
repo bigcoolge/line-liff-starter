@@ -6,10 +6,11 @@ function enableButton(text) {
 
 function disableButton(text) {
   var button = document.getElementById('submitButton');
-  button.addAttribute('disabled', true);
+  button.setAttribute('disabled', true);
   button.innerHTML = text || 'Loading...';
 }
 
+window.dis = disableButton;
 
 window.onload = function () {
   var userId;
