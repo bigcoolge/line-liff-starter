@@ -1,5 +1,5 @@
-var userId = 'U55dbae93eeaee85433eeb60d77461e0b';
-var displayName = 'Marc';
+var userId;
+var displayName;
 
 // Send form
 document.getElementById('phoneForm').addEventListener('submit', function (e) {
