@@ -2,8 +2,8 @@ window.onload = function (e) {
   liff.init(function () {
     console.log('liff initialized.')
     liff.getProfile()
-      console.log('Got profile.')
-      .then(function (profile) {
+    .then(function (profile) {
+        console.log('Got profile.')
         initializeApp(profile.userId, profile.displayName);
       })
       .catch(function (err) {
@@ -14,10 +14,6 @@ window.onload = function (e) {
 
 function initializeApp(userId, displayName) {
   console.log('Initializing app.')
-  // closeWindow call
-  document.getElementById('close').addEventListener('click', function () {
-    liff.closeWindow();
-  });
 
   // Send form
   document.getElementById('phoneForm').addEventListener('submit', function (e) {
